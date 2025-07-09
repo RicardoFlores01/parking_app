@@ -1,0 +1,190 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Contenido principal de la actividad -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!-- Botón para la ubicación -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnMyLocation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card_background_light">
+
+        <ImageButton
+            android:id="@+id/myLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_my_location_24"
+            android:backgroundTint="@color/card_background_light"
+            android:padding="15dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/start"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="130dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card_background_light">
+
+        <ImageButton
+            android:id="@+id/startNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_navigation_24"
+            android:backgroundTint="@color/card_background_light"
+            android:padding="15dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnMas"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card_background_light">
+
+        <ImageButton
+            android:id="@+id/mas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_add_24"
+            android:backgroundTint="@color/card_background_light"
+            android:padding="15dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnMenos"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card_background_light">
+
+        <ImageButton
+            android:id="@+id/menos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/btnmenos"
+            android:backgroundTint="@color/card_background_light"
+            android:padding="15dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Botón para agregar un carro, centrado en la parte inferior -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btnAddCar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="60dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card_background_light">
+
+        <Button
+            android:id="@+id/btnPark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estacionar aquí"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="13dp"
+            android:textColor="@color/black"
+            android:elevation="0dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|center"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/card_background_light"
+        android:visibility="gone"
+        >
+
+    <TextView
+        android:id="@+id/txtMin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0 min"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="top|center"/>
+
+        <TextView
+            android:id="@+id/txtKm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0 km"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/deleteAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                app:cardBackgroundColor="@color/card_background_light">
+
+                <ImageButton
+                    android:id="@+id/delete"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="@drawable/exit"
+                    android:contentDescription="Salir navegación" />
+            </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+<!--
+            app:tint="?attr/colorOnSurface"
+-->

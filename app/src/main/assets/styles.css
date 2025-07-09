@@ -1,0 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+#centerMarker {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(6,130,217);
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+    box-shadow: -1px 0px 33px -7px rgba(0,149,255,0.81);
+    -webkit-box-shadow: -1px 0px 33px -7px rgba(0,149,255,0.81);
+    -moz-box-shadow: -1px 0px 33px -7px rgba(0,149,255,0.81);
+}

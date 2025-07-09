@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Define colores para el modo claro -->
+        <item name="cardBackgroundColor">@color/card_background_light</item>
+
+    </style>
+</resources>
